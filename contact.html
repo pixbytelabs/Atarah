@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - ATARAH</title>
+    <meta name="description" content="Get in touch with ATARAH - contact form, store information, and customer service.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/png" href="images/Logo.png">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="images/Logo.png" alt="ATARAH Logo" class="logo">
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="collections.html" class="nav-link">Collections</a>
+                </li>
+                <li class="nav-item">
+                    <a href="store-info.html" class="nav-link">Store Info</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link active">Contact</a>
+                </li>
+            </ul>
+            <div class="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <h1 class="page-title">Contact Us</h1>
+                <p class="page-subtitle">We'd love to hear from you. Get in touch with our team.</p>
+            </div>
+        </section>
+
+        <section class="contact-form-section">
+            <div class="container">
+                <div class="contact-layout">
+                    <div class="contact-form-container">
+                        <h2 class="form-title">Send us a Message</h2>
+                        <form id="contact-form" class="contact-form">
+                            <div class="form-group">
+                                <label for="name" class="form-label">Full Name *</label>
+                                <input 
+                                    type="text" 
+                                    id="name" 
+                                    name="name" 
+                                    class="form-input" 
+                                    required
+                                    placeholder="Enter your full name"
+                                >
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email Address *</label>
+                                <input 
+                                    type="email" 
+                                    id="email" 
+                                    name="email" 
+                                    class="form-input" 
+                                    required
+                                    placeholder="your.email@example.com"
+                                >
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone" class="form-label">Phone Number</label>
+                                <input 
+                                    type="tel" 
+                                    id="phone" 
+                                    name="phone" 
+                                    class="form-input"
+                                    placeholder="(555) 123-4567"
+                                >
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject" class="form-label">Subject *</label>
+                                <select id="subject" name="subject" class="form-select" required>
+                                    <option value="">Please select a subject</option>
+                                    <option value="general">General Inquiry</option>
+                                    <option value="styling">Personal Styling Consultation</option>
+                                    <option value="appointment">Store Appointment</option>
+                                    <option value="custom">Custom Order</option>
+                                    <option value="alterations">Alterations & Tailoring</option>
+                                    <option value="feedback">Feedback</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message" class="form-label">Message *</label>
+                                <textarea 
+                                    id="message" 
+                                    name="message" 
+                                    class="form-textarea" 
+                                    rows="6" 
+                                    required
+                                    placeholder="Please share your message, questions, or styling preferences..."
+                                ></textarea>
+                            </div>
+
+                            <div class="form-group checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="newsletter" class="form-checkbox">
+                                    <span class="checkbox-text">Subscribe to our newsletter for style updates and exclusive offers</span>
+                                </label>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary form-submit">
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+
+                    <div class="contact-info-sidebar">
+                        <div class="contact-card">
+                            <h3 class="contact-card-title">Get in Touch</h3>
+                            <div class="contact-methods-list">
+                                <div class="contact-method-item">
+                                    <div class="method-icon">📞</div>
+                                    <div class="method-content">
+                                        <h4 class="method-title">Phone</h4>
+                                        <p class="method-value">
+                                            <a href="tel:+15551234567">(555) 123-4567</a>
+                                        </p>
+                                        <p class="method-note">Mon-Sat: 10 AM - 8 PM</p>
+                                    </div>
+                                </div>
+
+                                <div class="contact-method-item">
+                                    <div class="method-icon">📧</div>
+                                    <div class="method-content">
+                                        <h4 class="method-title">Email</h4>
+                                        <p class="method-value">
+                                            <a href="mailto:hello@atarah.com">hello@atarah.com</a>
+                                        </p>
+                                        <p class="method-note">We respond within 24 hours</p>
+                                    </div>
+                                </div>
+
+                                <div class="contact-method-item">
+                                    <div class="method-icon">💬</div>
+                                    <div class="method-content">
+                                        <h4 class="method-title">WhatsApp</h4>
+                                        <p class="method-value">
+                                            <a href="https://wa.me/15551234567" target="_blank">(555) 123-4567</a>
+                                        </p>
+                                        <p class="method-note">Quick styling questions</p>
+                                    </div>
+                                </div>
+
+                                <div class="contact-method-item">
+                                    <div class="method-icon">📍</div>
+                                    <div class="method-content">
+                                        <h4 class="method-title">Visit Us</h4>
+                                        <p class="method-value">123 Fashion Avenue</p>
+                                        <p class="method-note">
+                                            <a href="store-info.html">View store details</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contact-card">
+                            <h3 class="contact-card-title">Follow Us</h3>
+                            <div class="social-media-links">
+                                <a href="#" class="social-media-link">
+                                    <span class="social-icon">📷</span>
+                                    <span class="social-name">Instagram</span>
+                                </a>
+                                <a href="#" class="social-media-link">
+                                    <span class="social-icon">📘</span>
+                                    <span class="social-name">Facebook</span>
+                                </a>
+                                <a href="#" class="social-media-link">
+                                    <span class="social-icon">🐦</span>
+                                    <span class="social-name">Twitter</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq-section">
+            <div class="container">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>Do you offer personal styling services?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Yes! We offer complimentary personal styling consultations with our expert stylists. You can book an appointment by calling us or using our contact form above.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>What are your return and exchange policies?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>We accept returns and exchanges within 30 days of purchase with original tags and receipt. Items must be in original condition. Altered items cannot be returned.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>Do you provide alteration services?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Yes, we offer professional alteration services in-store. Our expert tailors can adjust garments for the perfect fit. Alteration pricing varies by item and complexity.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>Can I schedule a private shopping appointment?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Absolutely! We offer private shopping experiences outside regular hours for VIP customers. Please contact us to schedule your exclusive appointment.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>Do you offer gift cards?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Yes, ATARAH gift cards are available in any denomination. They make perfect gifts for the fashion enthusiasts in your life. Contact us for details.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>How often do you receive new collections?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>We receive new pieces monthly and launch seasonal collections four times per year. Subscribe to our newsletter to be the first to know about new arrivals.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials-preview">
+            <div class="container">
+                <h2 class="section-title">What Our Customers Say</h2>
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                        <p class="testimonial-text">
+                            "The personal styling service at ATARAH is exceptional. They helped me find the perfect pieces for my wardrobe that I treasure every day."
+                        </p>
+                        <div class="testimonial-author">
+                            <strong>Sarah M.</strong>
+                            <span>Verified Customer</span>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                        <p class="testimonial-text">
+                            "Quality like no other. Every piece I've purchased has become a staple in my closet. The attention to detail is remarkable."
+                        </p>
+                        <div class="testimonial-author">
+                            <strong>Michael R.</strong>
+                            <span>Verified Customer</span>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                        <p class="testimonial-text">
+                            "The boutique experience is luxury at its finest. From the moment you walk in, you feel like you're getting VIP treatment."
+                        </p>
+                        <div class="testimonial-author">
+                            <strong>Emma L.</strong>
+                            <span>Verified Customer</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="images/Logo.png" alt="ATARAH Logo" class="logo">
+                    </div>
+                    <p class="footer-tagline">Where luxury meets style</p>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="collections.html">Collections</a></li>
+                        <li><a href="store-info.html">Store Info</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Contact Info</h4>
+                    <ul class="footer-contact">
+                        <li>123 Fashion Avenue</li>
+                        <li>Style District, City 12345</li>
+                        <li>Phone: (555) 123-4567</li>
+                        <li>Email: hello@atarah.com</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">Facebook</a>
+                        <a href="#" class="social-link">Twitter</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 ATARAH. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        // FAQ Toggle Functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const faqQuestions = document.querySelectorAll('.faq-question');
+            
+            faqQuestions.forEach(question => {
+                question.addEventListener('click', function() {
+                    const faqItem = this.parentElement;
+                    const answer = faqItem.querySelector('.faq-answer');
+                    const icon = this.querySelector('.faq-icon');
+                    const isExpanded = this.getAttribute('aria-expanded') === 'true';
+                    
+                    // Close all other FAQ items
+                    faqQuestions.forEach(otherQuestion => {
+                        if (otherQuestion !== this) {
+                            otherQuestion.setAttribute('aria-expanded', 'false');
+                            otherQuestion.querySelector('.faq-icon').textContent = '+';
+                            otherQuestion.parentElement.querySelector('.faq-answer').style.maxHeight = '0';
+                        }
+                    });
+                    
+                    // Toggle current FAQ item
+                    if (isExpanded) {
+                        this.setAttribute('aria-expanded', 'false');
+                        icon.textContent = '+';
+                        answer.style.maxHeight = '0';
+                    } else {
+                        this.setAttribute('aria-expanded', 'true');
+                        icon.textContent = '−';
+                        answer.style.maxHeight = answer.scrollHeight + 'px';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

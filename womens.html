@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Women's Collection - ATARAH</title>
+    <meta name="description" content="Discover ATARAH's women's luxury fashion collection - elegant designs for the modern woman.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/png" href="images/Logo.png">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="images/Logo.png" alt="ATARAH Logo" class="logo">
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="collections.html" class="nav-link">Collections</a>
+                </li>
+                <li class="nav-item">
+                    <a href="store-info.html" class="nav-link">Store Info</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <h1 class="page-title">Women's Collection</h1>
+                <p class="page-subtitle">Elegant designs for the modern woman</p>
+            </div>
+        </section>
+
+        <section class="product-filters">
+            <div class="container">
+                <div class="filters-wrapper">
+                    <div class="filter-group">
+                        <label for="category-filter">Category:</label>
+                        <select id="category-filter" class="filter-select">
+                            <option value="all">All Items</option>
+                            <option value="dresses">Dresses</option>
+                            <option value="blouses">Blouses</option>
+                            <option value="skirts">Skirts</option>
+                            <option value="outerwear">Outerwear</option>
+                            <option value="accessories">Accessories</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="occasion-filter">Occasion:</label>
+                        <select id="occasion-filter" class="filter-select">
+                            <option value="all">All Occasions</option>
+                            <option value="formal">Formal</option>
+                            <option value="business">Business</option>
+                            <option value="casual">Casual</option>
+                            <option value="evening">Evening</option>
+                            <option value="cocktail">Cocktail</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="season-filter">Season:</label>
+                        <select id="season-filter" class="filter-select">
+                            <option value="all">All Seasons</option>
+                            <option value="spring">Spring</option>
+                            <option value="summer">Summer</option>
+                            <option value="fall">Fall</option>
+                            <option value="winter">Winter</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="products-grid">
+            <div class="container">
+                <div class="products-wrapper">
+                    <div class="product-card" data-category="dresses" data-occasion="formal evening" data-season="all">
+                        <div class="product-image">
+                            <div class="placeholder-image product-placeholder"></div>
+                            <div class="product-overlay">
+                                <button class="btn btn-outline product-btn">View Details</button>
+                            </div>
+                        </div>
+                        <div class="product-details">
+                            <h3 class="product-title">Silk Evening Gown</h3>
+                            <p class="product-category">Evening Wear</p>
+                            <p class="product-description">Luxurious silk gown with intricate beading and flowing silhouette</p>
+                            <div class="product-materials">
+                                <span class="material-tag">Pure Silk</span>
+                                <span class="material-tag">Hand Beaded</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="blouses" data-occasion="business" data-season="all">
+                        <div class="product-image">
+                            <div class="placeholder-image product-placeholder"></div>
+                            <div class="product-overlay">
+                                <button class="btn btn-outline product-btn">View Details</button>
+                            </div>
+                        </div>
+                        <div class="product-details">
+                            <h3 class="product-title">Silk Blouse</h3>
+                            <p class="product-category">Business Attire</p>
+                            <p class="product-description">Classic silk blouse with French seams and mother-of-pearl buttons</p>
+                            <div class="product-materials">
+                                <span class="material-tag">Mulberry Silk</span>
+                                <span class="material-tag">French Seams</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="dresses" data-occasion="casual" data-season="spring summer">
+                        <div class="product-image">
+                            <div class="placeholder-image product-placeholder"></div>
+                            <div class="product-overlay">
+                                <button class="btn btn-outline product-btn">View Details</button>
+                            </div>
+                        </div>
+                        <div class="product-details">
+                            <h3 class="product-title">Linen Midi Dress</h3>
+                            <p class="product-category">Casual Wear</p>
+                            <p class="product-description">Breathable linen dress perfect for warm weather and casual occasions</p>
+                            <div class="product-materials">
+                                <span class="material-tag">Belgian Linen</span>
+                                <span class="material-tag">Pre-Washed</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="outerwear" data-occasion="formal business" data-season="fall winter">
+                        <div class="product-image">
+                            <div class="placeholder-image product-placeholder"></div>
+                            <div class="product-overlay">
+                                <button class="btn btn-outline product-btn">View Details</button>
+                            </div>
+                        </div>
+                        <div class="product-details">
+                            <h3 class="product-title">Wool Trench Coat</h3>
+                            <p class="product-category">Luxury Outerwear</p>
+                            <p class="product-description">Double-breasted wool trench with silk lining and leather trim</p>
+                            <div class="product-materials">
+                                <span class="material-tag">Wool Gabardine</span>
+                                <span class="material-tag">Silk Lined</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="accessories" data-occasion="formal business evening" data-season="all">
+                        <div class="product-image">
+                            <div class="placeholder-image product-placeholder"></div>
+                            <div class="product-overlay">
+                                <button class="btn btn-outline product-btn">View Details</button>
+                            </div>
+                        </div>
+                        <div class="product-details">
+                            <h3 class="product-title">Designer Handbag</h3>
+                            <p class="product-category">Luxury Accessories</p>
+                            <p class="product-description">Handcrafted leather handbag with gold-tone hardware and silk interior</p>
+                            <div class="product-materials">
+                                <span class="material-tag">Italian Leather</span>
+                                <span class="material-tag">Hand Stitched</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="skirts" data-occasion="business casual" data-season="all">
+                        <div class="product-image">
+                            <div class="placeholder-image product-placeholder"></div>
+                            <div class="product-overlay">
+                                <button class="btn btn-outline product-btn">View Details</button>
+                            </div>
+                        </div>
+                        <div class="product-details">
+                            <h3 class="product-title">Wool Pencil Skirt</h3>
+                            <p class="product-category">Business Wear</p>
+                            <p class="product-description">Classic pencil skirt in premium wool with hidden back zipper</p>
+                            <div class="product-materials">
+                                <span class="material-tag">Virgin Wool</span>
+                                <span class="material-tag">Wrinkle Resistant</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="dresses" data-occasion="cocktail evening" data-season="all">
+                        <div class="product-image">
+                            <div class="placeholder-image product-placeholder"></div>
+                            <div class="product-overlay">
+                                <button class="btn btn-outline product-btn">View Details</button>
+                            </div>
+                        </div>
+                        <div class="product-details">
+                            <h3 class="product-title">Cocktail Dress</h3>
+                            <p class="product-category">Evening Wear</p>
+                            <p class="product-description">Sophisticated cocktail dress with subtle shimmer and elegant draping</p>
+                            <div class="product-materials">
+                                <span class="material-tag">Silk Crepe</span>
+                                <span class="material-tag">Metallic Thread</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="accessories" data-occasion="formal evening cocktail" data-season="all">
+                        <div class="product-image">
+                            <div class="placeholder-image product-placeholder"></div>
+                            <div class="product-overlay">
+                                <button class="btn btn-outline product-btn">View Details</button>
+                            </div>
+                        </div>
+                        <div class="product-details">
+                            <h3 class="product-title">Pearl Necklace</h3>
+                            <p class="product-category">Fine Jewelry</p>
+                            <p class="product-description">Classic pearl necklace with gold clasp and graduated sizing</p>
+                            <div class="product-materials">
+                                <span class="material-tag">Cultured Pearls</span>
+                                <span class="material-tag">14K Gold</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="blouses" data-occasion="casual" data-season="spring summer">
+                        <div class="product-image">
+                            <div class="placeholder-image product-placeholder"></div>
+                            <div class="product-overlay">
+                                <button class="btn btn-outline product-btn">View Details</button>
+                            </div>
+                        </div>
+                        <div class="product-details">
+                            <h3 class="product-title">Cotton Chambray Shirt</h3>
+                            <p class="product-category">Casual Wear</p>
+                            <p class="product-description">Relaxed chambray shirt perfect for weekend styling</p>
+                            <div class="product-materials">
+                                <span class="material-tag">Organic Cotton</span>
+                                <span class="material-tag">Enzyme Washed</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="collection-features">
+            <div class="container">
+                <h2 class="section-title">Why Choose Our Women's Collection</h2>
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <div class="feature-icon">✨</div>
+                        <h3 class="feature-title">Feminine Elegance</h3>
+                        <p class="feature-text">Designs that celebrate and enhance the natural beauty of every woman.</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">🌟</div>
+                        <h3 class="feature-title">Luxurious Fabrics</h3>
+                        <p class="feature-text">Sourced from the world's finest mills for unparalleled quality and comfort.</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">👗</div>
+                        <h3 class="feature-title">Perfect Fit</h3>
+                        <p class="feature-text">Expert tailoring ensures a flattering silhouette for every body type.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="images/Logo.png" alt="ATARAH Logo" class="logo">
+                    </div>
+                    <p class="footer-tagline">Where luxury meets style</p>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="collections.html">Collections</a></li>
+                        <li><a href="store-info.html">Store Info</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Contact Info</h4>
+                    <ul class="footer-contact">
+                        <li>123 Fashion Avenue</li>
+                        <li>Style District, City 12345</li>
+                        <li>Phone: (555) 123-4567</li>
+                        <li>Email: hello@atarah.com</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">Facebook</a>
+                        <a href="#" class="social-link">Twitter</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 ATARAH. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

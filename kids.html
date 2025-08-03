@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kids Collection - ATARAH</title>
+    <meta name="description" content="Discover ATARAH's kids fashion collection - stylish and comfortable clothing for children.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/png" href="images/Logo.png">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="images/Logo.png" alt="ATARAH Logo" class="logo">
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="collections.html" class="nav-link">Collections</a>
+                </li>
+                <li class="nav-item">
+                    <a href="store-info.html" class="nav-link">Store Info</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <h1 class="page-title">Kids Collection</h1>
+                <p class="page-subtitle">Stylish and comfortable fashion for little ones</p>
+            </div>
+        </section>
+
+        <section class="product-filters">
+            <div class="container">
+                <div class="filters-wrapper">
+                    <div class="filter-group">
+                        <label for="category-filter">Category:</label>
+                        <select id="category-filter" class="filter-select">
+                            <option value="all">All Items</option>
+                            <option value="formal">Formal Wear</option>
+                            <option value="casual">Casual Wear</option>
+                            <option value="playwear">Playwear</option>
+                            <option value="outerwear">Outerwear</option>
+                            <option value="accessories">Accessories</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="age-filter">Age Group:</label>
+                        <select id="occasion-filter" class="filter-select">
+                            <option value="all">All Ages</option>
+                            <option value="toddler">Toddler (2-4)</option>
+                            <option value="child">Child (5-8)</option>
+                            <option value="tween">Tween (9-12)</option>
+                            <option value="teen">Teen (13-16)</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="season-filter">Season:</label>
+                        <select id="season-filter" class="filter-select">
+                            <option value="all">All Seasons</option>
+                            <option value="spring">Spring</option>
+                            <option value="summer">Summer</option>
+                            <option value="fall">Fall</option>
+                            <option value="winter">Winter</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="products-grid">
+            <div class="container">
+                <div class="products-wrapper">
+                    <div class="product-card" data-category="formal" data-occasion="child tween" data-season="all">
+                        <div class="product-image">
+                            <div class="placeholder-image product-placeholder"></div>
+                            <div class="product-overlay">
+                                <button class="btn btn-outline product-btn">View Details</button>
+                            </div>
+                        </div>
+                        <div class="product-details">
+                            <h3 class="product-title">Little Gentleman Suit</h3>
+                            <p class="product-category">Formal Wear</p>
+                            <p class="product-description">Three-piece suit perfect for special occasions and formal events</p>
+                            <div class="product-materials">
+                                <span class="material-tag">Cotton Blend</span>
+                                <span class="material-tag">Machine Washable</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="formal" data-occasion="child tween teen" data-season="all">
+                        <div class="product-image">
+                            <div class="placeholder-image product-placeholder"></div>
+                            <div class="product-overlay">
+                                <button class="btn btn-outline product-btn">View Details</button>
+                            </div>
+                        </div>
+                        <div class="product-details">
+                            <h3 class="product-title">Princess Party Dress</h3>
+                            <p class="product-category">Formal Wear</p>
+                            <p class="product-description">Elegant dress with tulle skirt and delicate embroidery details</p>
+                            <div class="product-materials">
+                                <span class="material-tag">Soft Tulle</span>
+                                <span class="material-tag">Hand Embroidered</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="casual" data-occasion="toddler child" data-season="spring summer">
+                        <div class="product-image">
+                            <div class="placeholder-image product-placeholder"></div>
+                            <div class="product-overlay">
+                                <button class="btn btn-outline product-btn">View Details</button>
+                            </div>
+                        </div>
+                        <div class="product-details">
+                            <h3 class="product-title">Organic Cotton T-Shirt</h3>
+                            <p class="product-category">Casual Wear</p>
+                            <p class="product-description">Soft organic cotton tee with fun prints and comfortable fit</p>
+                            <div class="product-materials">
+                                <span class="material-tag">100% Organic Cotton</span>
+                                <span class="material-tag">Non-Toxic Prints</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="outerwear" data-occasion="toddler child tween" data-season="fall winter">
+                        <div class="product-image">
+                            <div class="placeholder-image product-placeholder"></div>
+                            <div class="product-overlay">
+                                <button class="btn btn-outline product-btn">View Details</button>
+                            </div>
+                        </div>
+                        <div class="product-details">
+                            <h3 class="product-title">Cozy Winter Coat</h3>
+                            <p class="product-category">Outerwear</p>
+                            <p class="product-description">Warm winter coat with faux fur trim and easy-zip closure</p>
+                            <div class="product-materials">
+                                <span class="material-tag">Water Resistant</span>
+                                <span class="material-tag">Faux Fur Trim</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="playwear" data-occasion="toddler child" data-season="all">
+                        <div class="product-image">
+                            <div class="placeholder-image product-placeholder"></div>
+                            <div class="product-overlay">
+                                <button class="btn btn-outline product-btn">View Details</button>
+                            </div>
+                        </div>
+                        <div class="product-details">
+                            <h3 class="product-title">Adventure Play Set</h3>
+                            <p class="product-category">Playwear</p>
+                            <p class="product-description">Durable play clothes designed for active kids and outdoor fun</p>
+                            <div class="product-materials">
+                                <span class="material-tag">Stretch Cotton</span>
+                                <span class="material-tag">Stain Resistant</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="casual" data-occasion="tween teen" data-season="all">
+                        <div class="product-image">
+                            <div class="placeholder-image product-placeholder"></div>
+                            <div class="product-overlay">
+                                <button class="btn btn-outline product-btn">View Details</button>
+                            </div>
+                        </div>
+                        <div class="product-details">
+                            <h3 class="product-title">Denim Jacket</h3>
+                            <p class="product-category">Casual Wear</p>
+                            <p class="product-description">Classic denim jacket with modern fit and trendy details</p>
+                            <div class="product-materials">
+                                <span class="material-tag">Premium Denim</span>
+                                <span class="material-tag">Stretch Fit</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="accessories" data-occasion="child tween teen" data-season="all">
+                        <div class="product-image">
+                            <div class="placeholder-image product-placeholder"></div>
+                            <div class="product-overlay">
+                                <button class="btn btn-outline product-btn">View Details</button>
+                            </div>
+                        </div>
+                        <div class="product-details">
+                            <h3 class="product-title">Mini Backpack</h3>
+                            <p class="product-category">Accessories</p>
+                            <p class="product-description">Stylish mini backpack perfect for school or weekend adventures</p>
+                            <div class="product-materials">
+                                <span class="material-tag">Canvas Material</span>
+                                <span class="material-tag">Adjustable Straps</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="formal" data-occasion="tween teen" data-season="all">
+                        <div class="product-image">
+                            <div class="placeholder-image product-placeholder"></div>
+                            <div class="product-overlay">
+                                <button class="btn btn-outline product-btn">View Details</button>
+                            </div>
+                        </div>
+                        <div class="product-details">
+                            <h3 class="product-title">Formal Blazer</h3>
+                            <p class="product-category">Formal Wear</p>
+                            <p class="product-description">Sophisticated blazer for young fashionistas attending special events</p>
+                            <div class="product-materials">
+                                <span class="material-tag">Wool Blend</span>
+                                <span class="material-tag">Tailored Fit</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="casual" data-occasion="toddler child tween" data-season="spring summer">
+                        <div class="product-image">
+                            <div class="placeholder-image product-placeholder"></div>
+                            <div class="product-overlay">
+                                <button class="btn btn-outline product-btn">View Details</button>
+                            </div>
+                        </div>
+                        <div class="product-details">
+                            <h3 class="product-title">Summer Sundress</h3>
+                            <p class="product-category">Casual Wear</p>
+                            <p class="product-description">Light and breezy sundress perfect for warm weather days</p>
+                            <div class="product-materials">
+                                <span class="material-tag">Cotton Voile</span>
+                                <span class="material-tag">Breathable Fabric</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="collection-features">
+            <div class="container">
+                <h2 class="section-title">Why Choose Our Kids Collection</h2>
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <div class="feature-icon">🌈</div>
+                        <h3 class="feature-title">Safe Materials</h3>
+                        <p class="feature-text">All fabrics are tested for safety and use non-toxic dyes and treatments.</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">🎯</div>
+                        <h3 class="feature-title">Comfortable Fit</h3>
+                        <p class="feature-text">Designed for active kids with room to grow and move freely.</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">✨</div>
+                        <h3 class="feature-title">Stylish Designs</h3>
+                        <p class="feature-text">Fashion-forward styles that kids love and parents appreciate.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="kids-sizing-guide">
+            <div class="container">
+                <h2 class="section-title">Size Guide</h2>
+                <div class="sizing-info">
+                    <div class="size-chart">
+                        <h3>Age & Size Reference</h3>
+                        <ul class="size-list">
+                            <li><strong>Toddler (2-4):</strong> Sizes 2T, 3T, 4T</li>
+                            <li><strong>Child (5-8):</strong> Sizes XS, S</li>
+                            <li><strong>Tween (9-12):</strong> Sizes M, L</li>
+                            <li><strong>Teen (13-16):</strong> Sizes XL, XXL</li>
+                        </ul>
+                    </div>
+                    <div class="sizing-tips">
+                        <h3>Fitting Tips</h3>
+                        <ul class="tips-list">
+                            <li>Consider growth spurts when selecting sizes</li>
+                            <li>Check our detailed measurements for each item</li>
+                            <li>Adjustable features provide longer wearability</li>
+                            <li>Contact our stylists for personalized recommendations</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="images/Logo.png" alt="ATARAH Logo" class="logo">
+                    </div>
+                    <p class="footer-tagline">Where luxury meets style</p>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="collections.html">Collections</a></li>
+                        <li><a href="store-info.html">Store Info</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Contact Info</h4>
+                    <ul class="footer-contact">
+                        <li>123 Fashion Avenue</li>
+                        <li>Style District, City 12345</li>
+                        <li>Phone: (555) 123-4567</li>
+                        <li>Email: hello@atarah.com</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">Facebook</a>
+                        <a href="#" class="social-link">Twitter</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 ATARAH. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

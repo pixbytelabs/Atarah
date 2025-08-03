@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessories - ATARAH</title>
+    <meta name="description" content="Complete your look with ATARAH's luxury accessories collection - bags, jewelry, and more.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/png" href="images/Logo.png">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="images/Logo.png" alt="ATARAH Logo" class="logo">
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="collections.html" class="nav-link">Collections</a>
+                </li>
+                <li class="nav-item">
+                    <a href="store-info.html" class="nav-link">Store Info</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <h1 class="page-title">Accessories Collection</h1>
+                <p class="page-subtitle">The perfect finishing touches for every ensemble</p>
+            </div>
+        </section>
+
+        <section class="product-filters">
+            <div class="container">
+                <div class="filters-wrapper">
+                    <div class="filter-group">
+                        <label for="category-filter">Category:</label>
+                        <select id="category-filter" class="filter-select">
+                            <option value="all">All Items</option>
+                            <option value="bags">Bags & Purses</option>
+                            <option value="jewelry">Jewelry</option>
+                            <option value="scarves">Scarves & Wraps</option>
+                            <option value="belts">Belts</option>
+                            <option value="sunglasses">Sunglasses</option>
+                            <option value="watches">Watches</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="occasion-filter">Occasion:</label>
+                        <select id="occasion-filter" class="filter-select">
+                            <option value="all">All Occasions</option>
+                            <option value="formal">Formal</option>
+                            <option value="business">Business</option>
+                            <option value="casual">Casual</option>
+                            <option value="evening">Evening</option>
+                            <option value="travel">Travel</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="material-filter">Material:</label>
+                        <select id="season-filter" class="filter-select">
+                            <option value="all">All Materials</option>
+                            <option value="leather">Leather</option>
+                            <option value="silk">Silk</option>
+                            <option value="gold">Gold</option>
+                            <option value="silver">Silver</option>
+                            <option value="pearls">Pearls</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="products-grid">
+            <div class="container">
+                <div class="products-wrapper">
+                    <div class="product-card" data-category="bags" data-occasion="formal business" data-season="leather">
+                        <div class="product-image">
+                            <div class="placeholder-image product-placeholder"></div>
+                            <div class="product-overlay">
+                                <button class="btn btn-outline product-btn">View Details</button>
+                            </div>
+                        </div>
+                        <div class="product-details">
+                            <h3 class="product-title">Italian Leather Handbag</h3>
+                            <p class="product-category">Luxury Handbags</p>
+                            <p class="product-description">Handcrafted leather handbag with gold hardware and silk interior</p>
+                            <div class="product-materials">
+                                <span class="material-tag">Italian Leather</span>
+                                <span class="material-tag">Hand Stitched</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="jewelry" data-occasion="formal evening" data-season="pearls">
+                        <div class="product-image">
+                            <div class="placeholder-image product-placeholder"></div>
+                            <div class="product-overlay">
+                                <button class="btn btn-outline product-btn">View Details</button>
+                            </div>
+                        </div>
+                        <div class="product-details">
+                            <h3 class="product-title">Pearl Earrings</h3>
+                            <p class="product-category">Fine Jewelry</p>
+                            <p class="product-description">Classic cultured pearl earrings with 18K gold settings</p>
+                            <div class="product-materials">
+                                <span class="material-tag">Cultured Pearls</span>
+                                <span class="material-tag">18K Gold</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="scarves" data-occasion="casual business" data-season="silk">
+                        <div class="product-image">
+                            <div class="placeholder-image product-placeholder"></div>
+                            <div class="product-overlay">
+                                <button class="btn btn-outline product-btn">View Details</button>
+                            </div>
+                        </div>
+                        <div class="product-details">
+                            <h3 class="product-title">Silk Scarf</h3>
+                            <p class="product-category">Scarves & Wraps</p>
+                            <p class="product-description">Luxurious silk scarf with hand-rolled edges and artist design</p>
+                            <div class="product-materials">
+                                <span class="material-tag">Pure Silk</span>
+                                <span class="material-tag">Hand Rolled</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="belts" data-occasion="casual business" data-season="leather">
+                        <div class="product-image">
+                            <div class="placeholder-image product-placeholder"></div>
+                            <div class="product-overlay">
+                                <button class="btn btn-outline product-btn">View Details</button>
+                            </div>
+                        </div>
+                        <div class="product-details">
+                            <h3 class="product-title">Designer Leather Belt</h3>
+                            <p class="product-category">Belts & Accessories</p>
+                            <p class="product-description">Premium leather belt with signature buckle in gold and silver</p>
+                            <div class="product-materials">
+                                <span class="material-tag">Full Grain Leather</span>
+                                <span class="material-tag">Metal Buckle</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="sunglasses" data-occasion="casual travel" data-season="all">
+                        <div class="product-image">
+                            <div class="placeholder-image product-placeholder"></div>
+                            <div class="product-overlay">
+                                <button class="btn btn-outline product-btn">View Details</button>
+                            </div>
+                        </div>
+                        <div class="product-details">
+                            <h3 class="product-title">Designer Sunglasses</h3>
+                            <p class="product-category">Eyewear</p>
+                            <p class="product-description">Oversized sunglasses with UV protection and acetate frames</p>
+                            <div class="product-materials">
+                                <span class="material-tag">Acetate Frames</span>
+                                <span class="material-tag">UV400 Protection</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="watches" data-occasion="formal business" data-season="gold">
+                        <div class="product-image">
+                            <div class="placeholder-image product-placeholder"></div>
+                            <div class="product-overlay">
+                                <button class="btn btn-outline product-btn">View Details</button>
+                            </div>
+                        </div>
+                        <div class="product-details">
+                            <h3 class="product-title">Gold Dress Watch</h3>
+                            <p class="product-category">Luxury Watches</p>
+                            <p class="product-description">Elegant dress watch with Swiss movement and gold case</p>
+                            <div class="product-materials">
+                                <span class="material-tag">Swiss Movement</span>
+                                <span class="material-tag">Gold Plated</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="bags" data-occasion="evening formal" data-season="all">
+                        <div class="product-image">
+                            <div class="placeholder-image product-placeholder"></div>
+                            <div class="product-overlay">
+                                <button class="btn btn-outline product-btn">View Details</button>
+                            </div>
+                        </div>
+                        <div class="product-details">
+                            <h3 class="product-title">Evening Clutch</h3>
+                            <p class="product-category">Evening Bags</p>
+                            <p class="product-description">Beaded evening clutch with chain strap and satin lining</p>
+                            <div class="product-materials">
+                                <span class="material-tag">Hand Beaded</span>
+                                <span class="material-tag">Satin Lined</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="jewelry" data-occasion="formal evening" data-season="gold">
+                        <div class="product-image">
+                            <div class="placeholder-image product-placeholder"></div>
+                            <div class="product-overlay">
+                                <button class="btn btn-outline product-btn">View Details</button>
+                            </div>
+                        </div>
+                        <div class="product-details">
+                            <h3 class="product-title">Statement Necklace</h3>
+                            <p class="product-category">Fine Jewelry</p>
+                            <p class="product-description">Bold statement necklace with crystals and gold-tone setting</p>
+                            <div class="product-materials">
+                                <span class="material-tag">Austrian Crystals</span>
+                                <span class="material-tag">Gold Tone</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="bags" data-occasion="travel casual" data-season="leather">
+                        <div class="product-image">
+                            <div class="placeholder-image product-placeholder"></div>
+                            <div class="product-overlay">
+                                <button class="btn btn-outline product-btn">View Details</button>
+                            </div>
+                        </div>
+                        <div class="product-details">
+                            <h3 class="product-title">Travel Tote</h3>
+                            <p class="product-category">Travel Accessories</p>
+                            <p class="product-description">Spacious leather tote perfect for work and weekend travel</p>
+                            <div class="product-materials">
+                                <span class="material-tag">Pebbled Leather</span>
+                                <span class="material-tag">Multiple Pockets</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="accessories-guide">
+            <div class="container">
+                <h2 class="section-title">Styling Your Accessories</h2>
+                <div class="styling-grid">
+                    <div class="styling-tip">
+                        <h3 class="tip-title">Bag Selection</h3>
+                        <p class="tip-text">Choose bag size based on occasion - clutches for evening, totes for work, and crossbody for casual outings.</p>
+                    </div>
+                    <div class="styling-tip">
+                        <h3 class="tip-title">Jewelry Layering</h3>
+                        <p class="tip-text">Mix metals and textures for modern appeal, but keep proportions balanced for elegant sophistication.</p>
+                    </div>
+                    <div class="styling-tip">
+                        <h3 class="tip-title">Scarf Versatility</h3>
+                        <p class="tip-text">Scarves can be worn as neck accessories, hair wraps, belt alternatives, or bag accents for endless styling options.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="collection-features">
+            <div class="container">
+                <h2 class="section-title">Why Choose Our Accessories</h2>
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <div class="feature-icon">💎</div>
+                        <h3 class="feature-title">Premium Quality</h3>
+                        <p class="feature-text">Each piece is crafted from the finest materials with attention to every detail.</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">✨</div>
+                        <h3 class="feature-title">Timeless Appeal</h3>
+                        <p class="feature-text">Investment pieces that remain stylish and relevant season after season.</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">🎨</div>
+                        <h3 class="feature-title">Versatile Styling</h3>
+                        <p class="feature-text">Accessories that complement multiple outfits and adapt to various occasions.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="images/Logo.png" alt="ATARAH Logo" class="logo">
+                    </div>
+                    <p class="footer-tagline">Where luxury meets style</p>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="collections.html">Collections</a></li>
+                        <li><a href="store-info.html">Store Info</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Contact Info</h4>
+                    <ul class="footer-contact">
+                        <li>123 Fashion Avenue</li>
+                        <li>Style District, City 12345</li>
+                        <li>Phone: (555) 123-4567</li>
+                        <li>Email: hello@atarah.com</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">Facebook</a>
+                        <a href="#" class="social-link">Twitter</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 ATARAH. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

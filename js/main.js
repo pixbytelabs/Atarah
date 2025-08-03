@@ -6,28 +6,49 @@ document.addEventListener('DOMContentLoaded', function() {
     const navMenu = document.querySelector('.nav-menu');
     const navLinks = document.querySelectorAll('.nav-link');
 
-    if (navToggle && navMenu) {
-        navToggle.addEventListener('click', function() {
-            navMenu.classList.toggle('active');
-            navToggle.classList.toggle('active');
-        });
+    console.log('Elements found:', {
+        navToggle: !!navToggle,
+        navMenu: !!navMenu,
+        navLinksCount: navLinks.length
+    });
 
-        // Close mobile menu when clicking on nav links
-        navLinks.forEach(link => {
-            link.addEventListener('click', function() {
-                navMenu.classList.remove('active');
-                navToggle.classList.remove('active');
-            });
-        });
-
-        // Close mobile menu when clicking outside
-        document.addEventListener('click', function(e) {
-            if (!navToggle.contains(e.target) && !navMenu.contains(e.target)) {
-                navMenu.classList.remove('active');
-                navToggle.classList.remove('active');
-            }
-        });
+    if (!navToggle || !navMenu) {
+        console.error('Navigation elements not found!');
+        return;
     }
+
+    // Toggle mobile menu
+    navToggle.addEventListener('click', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        
+        console.log('Menu toggle clicked!');
+        navMenu.classList.toggle('show');
+        navToggle.classList.toggle('active');
+        
+        // Force style as backup
+        if (navMenu.classList.contains('show')) {
+            navMenu.style.left = '0px';
+        } else {
+            navMenu.style.left = '-100%';
+        }
+    });
+
+    // Close menu when clicking on nav links
+    navLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            navMenu.classList.remove('show');
+            navToggle.classList.remove('active');
+        });
+    });
+
+    // Close menu when clicking outside
+    document.addEventListener('click', function(e) {
+        if (!navToggle.contains(e.target) && !navMenu.contains(e.target)) {
+            navMenu.classList.remove('show');
+            navToggle.classList.remove('active');
+        }
+    });
 
     // Smooth Scrolling for navigation links
     navLinks.forEach(link => {
@@ -364,8 +385,8 @@ document.addEventListener('DOMContentLoaded', function() {
             fontSize: '1.1rem'
         });
 
-        const category = modal.querySelector('.modal-category');
-        Object.assign(category.style, {
+        const categoryElement = modal.querySelector('.modal-category');
+        Object.assign(categoryElement.style, {
             color: '#D4AF37',
             fontSize: '0.9rem',
             fontWeight: '600',

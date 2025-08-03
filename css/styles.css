@@ -182,6 +182,7 @@ h1, h2, h3, h4, h5, h6 {
     list-style: none;
     gap: 2rem;
     margin: 0;
+    z-index: 1000;
 }
 
 .nav-link {
@@ -220,6 +221,9 @@ h1, h2, h3, h4, h5, h6 {
     flex-direction: column;
     cursor: pointer;
     gap: 4px;
+    padding: 10px;
+    background: none;
+    border: none;
 }
 
 .nav-toggle span {
@@ -227,6 +231,8 @@ h1, h2, h3, h4, h5, h6 {
     height: 3px;
     background-color: var(--charcoal);
     transition: var(--transition);
+    display: block;
+    border-radius: 2px;
 }
 
 /* Hero Section */
@@ -983,28 +989,44 @@ h1, h2, h3, h4, h5, h6 {
     flex-wrap: wrap;
 }
 
-/* Responsive Design */
+/* Mobile Navigation */
 @media (max-width: 768px) {
-    .nav-menu {
-        position: fixed;
-        top: 80px;
-        left: -100%;
-        width: 100%;
-        background: var(--white);
-        flex-direction: column;
-        align-items: center;
-        padding: 2rem 0;
-        gap: 1rem;
-        transition: left 0.3s ease;
-        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-    }
-
-    .nav-menu.active {
-        left: 0;
-    }
-
     .nav-toggle {
-        display: flex;
+        display: flex !important;
+        flex-direction: column;
+        gap: 4px;
+        cursor: pointer;
+        padding: 10px;
+        z-index: 1001;
+    }
+    
+    .nav-menu {
+        position: fixed !important;
+        top: 80px !important;
+        left: -100% !important;
+        width: 100% !important;
+        height: calc(100vh - 80px) !important;
+        background-color: white !important;
+        flex-direction: column !important;
+        justify-content: flex-start !important;
+        align-items: center !important;
+        padding-top: 50px !important;
+        transition: left 0.3s ease !important;
+        z-index: 999 !important;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1) !important;
+    }
+    
+    .nav-menu.show {
+        left: 0 !important;
+    }
+    
+    .nav-menu li {
+        margin: 20px 0;
+    }
+    
+    .nav-menu .nav-link {
+        font-size: 1.2rem;
+        padding: 10px 20px;
     }
 
     .nav-toggle.active span:nth-child(1) {
